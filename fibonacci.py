@@ -18,6 +18,7 @@ def make_fibonacci(n):
     return [0]
   elif n == 2:
     return[0, 1]
+  else:
     for i in range(2, n):
       next_num = sequence[i - 1] + sequence[i - 2]
       sequence.append(next_num)
@@ -35,3 +36,5 @@ def main():
   terms = get_num_terms()
   result = make_fibonacci(terms)
   show_fibonacci(result)
+
+main()
